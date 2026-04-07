@@ -1,0 +1,101 @@
+.cta-button {
+    display: inline-block;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--color-accent);
+    color: var(--color-white);
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    border: 2px solid var(--color-accent);
+}
+
+.cta-button:hover {
+    background: transparent;
+    color: var(--color-accent);
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xxl);
+    align-items: start;
+}
+
+.contact-form-wrapper h2 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: var(--spacing-sm);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(45, 45, 45, 0.1);
+}
+
+.submit-btn {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.info-card {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.info-card:last-of-type { border-bottom: none; }
+.info-card h4 { margin-bottom: var(--spacing-sm); }
+.info-card a { color: var(--color-accent); font-weight: 600; }
+.info-desc { font-size: 0.85rem; color: var(--color-text-secondary); }
+
+.faq-section {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--color-border);
+}
+
+.faq-item { margin-bottom: var(--spacing-md); }
+.faq-item strong { display: block; margin-bottom: var(--spacing-sm); }
+.faq-item p { margin: 0; font-size: 0.9rem; }

@@ -1,0 +1,16 @@
+/* Program-focused reusable styles */
+
+.feature-list {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--color-text-secondary);
+}
+
+.feature-list li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.feature-list li:last-child {
+    margin-bottom: 0;
+}
