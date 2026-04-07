@@ -29,6 +29,12 @@
 
 .logo-text { color: var(--color-text-primary); }
 
+.logo-image {
+    height: 32px;
+    width: auto;
+    display: block;
+}
+
 .logo-mark {
     width: 32px;
     height: 32px;

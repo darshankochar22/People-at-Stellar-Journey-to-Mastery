@@ -1,0 +1,55 @@
+{
+  "posts": [
+    {
+      "id": "aarav-wallet-onboarding",
+      "title": "Week 1: Aarav Builds Wallet Onboarding",
+      "candidate": "Aarav",
+      "meta": "Featured · Candidate Log · White Belt",
+      "photo": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=200&q=60",
+      "intro": "Aarav is a 22-year-old frontend developer shifting into Web3 through the Stellar track.",
+      "targetProject": "A beginner wallet onboarding flow for first-time users joining campus blockchain clubs.",
+      "why": "New users drop off before making the first transaction because setup feels unclear.",
+      "how": "Step-by-step flow mapping, one click per action, and transaction confirmation states.",
+      "life": "He balances this build with final semester exams and 2 hours of coding every night.",
+      "socials": {
+        "twitter": "https://twitter.com/",
+        "linkedin": "https://linkedin.com/",
+        "github": "https://github.com/"
+      }
+    },
+    {
+      "id": "meera-event-dashboard",
+      "title": "Week 3: Meera Starts Event Tracking Dashboard",
+      "candidate": "Meera",
+      "meta": "Featured · Candidate Log · Yellow Belt",
+      "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=60",
+      "intro": "Meera is a product-minded engineer moving from Web2 analytics to on-chain product tooling.",
+      "targetProject": "A contract event dashboard that lets teams monitor key user actions in near real time.",
+      "why": "Early teams cannot improve products if user behavior is hidden inside raw logs.",
+      "how": "Indexed events, retry-safe polling, and a simple operator view for daily checks.",
+      "life": "She recently switched jobs and still ships one stable module each weekend.",
+      "socials": {
+        "twitter": "https://twitter.com/",
+        "linkedin": "https://linkedin.com/",
+        "github": "https://github.com/"
+      }
+    },
+    {
+      "id": "rohan-mini-dapp",
+      "title": "Week 6: Rohan Pushes Mini dApp to Real Users",
+      "candidate": "Rohan",
+      "meta": "Featured · Candidate Log · Orange Belt",
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=60",
+      "intro": "Rohan is a self-taught full-stack builder focused on practical utility products.",
+      "targetProject": "A mini dApp for freelance milestone payments with transparent release conditions.",
+      "why": "Small teams lose trust when payment status and delivery terms are not visible.",
+      "how": "Contract-first design, strict edge-case testing, and user validation every Friday.",
+      "life": "He freelances full-time and works on this project before client calls every morning.",
+      "socials": {
+        "twitter": "https://twitter.com/",
+        "linkedin": "https://linkedin.com/",
+        "github": "https://github.com/"
+      }
+    }
+  ]
+}
