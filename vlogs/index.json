@@ -1,6 +1,22 @@
 {
   "posts": [
     {
+      "id": "ansh-instant-tender-payments",
+      "title": "Ansh Singh: Instant Payments for Government Tenders",
+      "candidate": "Ansh Singh",
+      "meta": "Featured · Candidate Log · Real-World Project",
+      "photo": "https://api.dicebear.com/9.x/adventurer/svg?seed=Ansh%20Singh",
+      "intro": "Ansh Singh is pursuing a B.Tech in ECE at SRM Institute of Science and Technology, Chennai, originally from Sultanpur, Uttar Pradesh.",
+      "targetProject": "A solution enabling instant contractor payments after government work approval to reduce delays and improve transparency.",
+      "why": "Payments in many government tenders are delayed even after work completion, creating friction and uncertainty for contractors.",
+      "how": "He is designing an approval-triggered payment flow on Stellar to make transactions smoother, faster, and more transparent.",
+      "life": "He is focused on building real-life projects in emerging domains and wants to collaborate and contribute as a community partner.",
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/ansh-singh-9607481a6",
+        "github": "https://github.com/ANSHSINGH5999"
+      }
+    },
+    {
       "id": "aarav-wallet-onboarding",
       "title": "Week 1: Aarav Builds Wallet Onboarding",
       "candidate": "Aarav",
@@ -13,7 +29,6 @@
       "life": "He balances this build with final semester exams and 2 hours of coding every night.",
       "socials": {
         "twitter": "https://twitter.com/",
-        "linkedin": "https://linkedin.com/",
         "github": "https://github.com/"
       }
     },
@@ -30,7 +45,6 @@
       "life": "She recently switched jobs and still ships one stable module each weekend.",
       "socials": {
         "twitter": "https://twitter.com/",
-        "linkedin": "https://linkedin.com/",
         "github": "https://github.com/"
       }
     },
@@ -47,7 +61,6 @@
       "life": "He freelances full-time and works on this project before client calls every morning.",
       "socials": {
         "twitter": "https://twitter.com/",
-        "linkedin": "https://linkedin.com/",
         "github": "https://github.com/"
       }
     }

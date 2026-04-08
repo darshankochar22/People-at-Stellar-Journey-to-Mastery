@@ -1,0 +1,18 @@
+{
+  "id": "ansh-instant-tender-payments",
+  "title": "Ansh Singh: Instant Payments for Government Tenders",
+  "candidate": "Ansh Singh",
+  "meta": "Featured · Candidate Journey",
+  "photo": "https://api.dicebear.com/9.x/adventurer/svg?seed=Ansh%20Singh",
+  "paragraphs": [
+    "Ansh Singh is currently pursuing a B.Tech in Electronics and Communication Engineering (ECE) at SRM Institute of Science and Technology, Chennai. Originally from Sultanpur, Uttar Pradesh, he is motivated by projects that feel real, practical, and clearly valuable to people outside the tech bubble.",
+    "He developed a strong interest in Stellar because it is still unfamiliar to many builders compared to mainstream chains. For Ansh, that unfamiliarity is an advantage. It makes the space feel less crowded, more exploratory, and more meaningful for someone who wants to learn by building rather than by watching tutorials.",
+    "His current build is rooted in a problem he has repeatedly observed in the real world. In many government tenders, payments to contractors are delayed even after the work is completed. The delay creates financial stress, slows down new work, and reduces trust in the process. Ansh is working on a system where contractors can receive instant payments once the work is approved by the responsible government authorities.",
+    "The aim is not only speed, but also transparency. By connecting approvals to an immediate, traceable payment flow, the system can make transactions smoother and reduce ambiguity for both contractors and officials. Ansh is approaching the problem as a product and community opportunity: build something useful, test it with real constraints, and iterate until it is reliable enough to be trusted.",
+    "Beyond the project itself, he wants to collaborate across different builds and contribute as a community partner. He has noticed that many people are still unaware of what blockchain technology actually is. Even those who associate Bitcoin with blockchain often assume the career path is risky. Ansh wants to change that perception by spreading awareness, sharing realistic developer journeys, and helping build a strong developer community around Stellar."
+  ],
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/ansh-singh-9607481a6",
+    "github": "https://github.com/ANSHSINGH5999"
+  }
+}
