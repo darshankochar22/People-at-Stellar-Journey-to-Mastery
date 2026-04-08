@@ -1,6 +1,23 @@
 {
   "posts": [
     {
+      "id": "ankit-stellar-builder-journey",
+      "title": "Ankit Kumar: StellarVaultt Green Belt Build",
+      "candidate": "Ankit Kumar",
+      "meta": "Featured · Candidate Log · Stellar Journey to Mastery",
+      "photo": "https://api.dicebear.com/9.x/adventurer/svg?seed=Ankit%20Kumar",
+      "intro": "Ankit Kumar (@UnrealAnkit) is a Noida-based builder, CSE'28 at IILM, known for full-stack execution and community-first energy.",
+      "targetProject": "StellarVaultt: reward-token + reward-vault Soroban contracts, one-time SRT claim flow, wallet connect, claim status, and activity tracking.",
+      "why": "He is focused on practical blockchain utility with transparent rewards, predictable claims, and trust-first user flows.",
+      "how": "He implemented inter-contract transfer_from calls, one-claim-per-wallet checks, Next.js + TypeScript UI, test suite, and CI/CD deployment to Vercel.",
+      "life": "He balances grind-focused building with active community work, from Noida meetups to college partnerships.",
+      "socials": {
+        "twitter": "https://twitter.com/unrealankit",
+        "github": "https://github.com/UnrealAnkit",
+        "website": "https://stellarvaultt.vercel.app"
+      }
+    },
+    {
       "id": "ansh-instant-tender-payments",
       "title": "Ansh Singh: Instant Payments for Government Tenders",
       "candidate": "Ansh Singh",

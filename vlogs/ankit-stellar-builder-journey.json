@@ -1,0 +1,20 @@
+{
+  "id": "ankit-stellar-builder-journey",
+  "title": "Ankit Kumar: StellarVaultt Green Belt Build",
+  "candidate": "Ankit Kumar",
+  "meta": "Featured · Candidate Journey",
+  "photo": "https://api.dicebear.com/9.x/adventurer/svg?seed=Ankit%20Kumar",
+  "paragraphs": [
+    "Ankit Kumar (@UnrealAnkit) is a Noida-based full-stack builder and CSE'28 student who is shipping in public with clear consistency. In the Stellar Journey to Mastery track, his standout project is StellarVaultt, shared publicly as a Green Belt submission and deployed at stellarvaultt.vercel.app.",
+    "StellarVaultt is a reward distribution dApp on Stellar with two contracts: reward-token (SRT) and reward-vault. Users connect wallets (Freighter/Albedo/xBull), submit a claim transaction, and receive a one-time token reward when claim conditions pass.",
+    "Core project details include: inter-contract call from vault::claim() to token::transfer_from(), has_claimed guard to prevent double claims, campaign active/inactive control, reward amount management, claim history tracking, and emitted claim events.",
+    "The full-stack implementation uses Soroban Rust contracts with a Next.js 14 + TypeScript frontend. The UI includes wallet connect, transaction lifecycle states (preparing/pending/success/failed), token balance visibility, and activity feed updates.",
+    "Engineering details visible in the repo: test coverage for contract and frontend utilities/components, CI/CD via GitHub Actions, deployment workflow to Vercel, and structured environment-based configuration for testnet contract IDs.",
+    "From a product usage perspective, the project is built for straightforward reward campaign operations: admins initialize campaign parameters, users verify eligibility by wallet connection, and claim execution is tracked through clear status states and recent activity updates on testnet."
+  ],
+  "socials": {
+    "twitter": "https://twitter.com/unrealankit",
+    "github": "https://github.com/UnrealAnkit",
+    "website": "https://stellarvaultt.vercel.app"
+  }
+}
