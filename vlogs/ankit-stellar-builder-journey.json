@@ -5,12 +5,10 @@
   "meta": "Featured · Candidate Journey",
   "photo": "https://api.dicebear.com/9.x/adventurer/svg?seed=Ankit%20Kumar",
   "paragraphs": [
-    "Ankit Kumar (@UnrealAnkit) is a Noida-based full-stack builder and CSE'28 student who is shipping in public with clear consistency. In the Stellar Journey to Mastery track, his standout project is StellarVaultt, shared publicly as a Green Belt submission and deployed at stellarvaultt.vercel.app.",
-    "StellarVaultt is a reward distribution dApp on Stellar with two contracts: reward-token (SRT) and reward-vault. Users connect wallets (Freighter/Albedo/xBull), submit a claim transaction, and receive a one-time token reward when claim conditions pass.",
-    "Core project details include: inter-contract call from vault::claim() to token::transfer_from(), has_claimed guard to prevent double claims, campaign active/inactive control, reward amount management, claim history tracking, and emitted claim events.",
-    "The full-stack implementation uses Soroban Rust contracts with a Next.js 14 + TypeScript frontend. The UI includes wallet connect, transaction lifecycle states (preparing/pending/success/failed), token balance visibility, and activity feed updates.",
-    "Engineering details visible in the repo: test coverage for contract and frontend utilities/components, CI/CD via GitHub Actions, deployment workflow to Vercel, and structured environment-based configuration for testnet contract IDs.",
-    "From a product usage perspective, the project is built for straightforward reward campaign operations: admins initialize campaign parameters, users verify eligibility by wallet connection, and claim execution is tracked through clear status states and recent activity updates on testnet."
+    "Ankit Kumar, known as @UnrealAnkit, brings a strong builder profile to the Stellar Journey track. He is based in Noida, studies CSE (Class of 2028) at IILM, and his bio reflects a hands-on journey across startup and product spaces: founder at Qfuss, former work at Sanity Gaming and AIPivot, and currently building DevDock AI.",
+    "For his Green Belt build, he created StellarVaultt, a live reward vault project where users connect their wallet and claim SRT tokens. The idea is simple but useful: make rewards transparent, reduce confusion, and let users clearly understand when they are eligible, pending, or successfully claimed.",
+    "On the implementation side, he built both the contract and app layers. The project uses a reward-token contract and a reward-vault contract, with the vault triggering token transfer through an inter-contract call. The app also handles one-time claim protection, claim status tracking, recent activity visibility, and wallet compatibility for tools like Freighter, Albedo, and xBull.",
+    "What stands out in his journey is not just the code, but the consistency. His public updates show both ambition and realism: community events, workshop collaboration, candid moments around rejection, and a steady \"keep shipping\" attitude. That makes this vlog story less about one project and more about how he is shaping his long-term builder path."
   ],
   "socials": {
     "twitter": "https://twitter.com/unrealankit",
