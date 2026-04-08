@@ -1,5 +1,6 @@
 async function loadBlogs() {
     const container = document.getElementById("blog-list");
+    const pagination = document.getElementById("blog-pagination");
     if (!container) return;
 
     const iconX = `<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.585-6.64 7.585H.47l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932Zm-1.292 19.49h2.04L6.486 3.24H4.298l13.31 17.404Z"/></svg>`;
@@ -22,12 +23,16 @@ async function loadBlogs() {
         return `<div class="blog-socials">${links.join("")}</div>`;
     }
 
-    try {
-        const response = await fetch("vlogs/index.json");
-        const data = await response.json();
-        const posts = data.posts || [];
+    function renderPosts(posts, page, perPage) {
+        const start = (page - 1) * perPage;
+        const pagePosts = posts.slice(start, start + perPage);
 
-        container.innerHTML = posts.map((post) => `
+        if (!pagePosts.length) {
+            container.innerHTML = `<article class="blog-entry"><p class="blog-intro">No vlogs on this page yet.</p></article>`;
+            return;
+        }
+
+        container.innerHTML = pagePosts.map((post) => `
             <article class="blog-entry">
                 <div class="blog-entry-head">
                     <h2 class="blog-entry-title">
@@ -52,8 +57,66 @@ async function loadBlogs() {
                 </div>
             </article>
         `).join("");
+    }
+
+    function renderPagination(totalPages, activePage, onPageChange) {
+        if (!pagination) return;
+        const buttons = [];
+        for (let i = 1; i <= totalPages; i += 1) {
+            buttons.push(`
+                <button class="page-btn ${i === activePage ? "active" : ""}" data-page="${i}" type="button">${i}</button>
+            `);
+        }
+        pagination.innerHTML = buttons.join("");
+        pagination.querySelectorAll(".page-btn").forEach((btn) => {
+            btn.addEventListener("click", () => {
+                const nextPage = Number(btn.getAttribute("data-page"));
+                onPageChange(nextPage);
+            });
+        });
+    }
+
+    try {
+        const response = await fetch("vlogs/index.json");
+        const data = await response.json();
+        const posts = data.posts || [];
+        const POSTS_PER_PAGE = 3;
+        const FIXED_PAGES = 3;
+        let currentPage = 1;
+
+        function getPageFromUrl() {
+            const params = new URLSearchParams(window.location.search);
+            const page = Number(params.get("page"));
+            if (!Number.isInteger(page) || page < 1 || page > FIXED_PAGES) return 1;
+            return page;
+        }
+
+        function setPageInUrl(page, replace = false) {
+            const url = new URL(window.location.href);
+            url.searchParams.set("page", String(page));
+            if (replace) {
+                window.history.replaceState({ page }, "", url.toString());
+            } else {
+                window.history.pushState({ page }, "", url.toString());
+            }
+        }
+
+        const updateView = (page, syncUrl = true, replaceUrl = false) => {
+            currentPage = page;
+            renderPosts(posts, currentPage, POSTS_PER_PAGE);
+            renderPagination(FIXED_PAGES, currentPage, updateView);
+            if (syncUrl) setPageInUrl(currentPage, replaceUrl);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+
+        window.addEventListener("popstate", () => {
+            updateView(getPageFromUrl(), false);
+        });
+
+        updateView(getPageFromUrl(), true, true);
     } catch (error) {
         container.innerHTML = "<p>Unable to load blogs right now.</p>";
+        if (pagination) pagination.innerHTML = "";
     }
 }
 

@@ -1,6 +1,23 @@
 {
   "posts": [
     {
+      "id": "sudhakar-finwise-smart-advisor",
+      "title": "Sudhakar Sutar: FinWise Smart Financial Advisor",
+      "candidate": "Sudhakar Sutar",
+      "meta": "Featured · Candidate Log · L4 to L6 Validated",
+      "photo": "https://api.dicebear.com/9.x/adventurer/svg?seed=Sudhakar%20Sutar",
+      "intro": "Sudhakar Sutar is a Pune-based builder who validated L4 in February, L5 in March, and L6 on 6 April in Stellar Journey to Mastery.",
+      "targetProject": "FinWise: a smart financial advisor with AI-based user guidance and a streak-based piggy bank feature.",
+      "why": "He wanted to help users build stronger money habits with practical guidance instead of generic finance tips.",
+      "how": "He combined AI advice with a deposit-and-streak piggy bank loop to make saving behavior consistent and measurable.",
+      "life": "He is focused on shipping practical features, learning fast, and growing through real community collaboration.",
+      "socials": {
+        "twitter": "https://x.com/SutarSudar56081",
+        "linkedin": "https://www.linkedin.com/in/sudhakar-sutar-801354321?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        "github": "https://github.com/sudha16-sketc"
+      }
+    },
+    {
       "id": "ankit-stellar-builder-journey",
       "title": "Ankit Kumar: StellarVaultt Green Belt Build",
       "candidate": "Ankit Kumar",

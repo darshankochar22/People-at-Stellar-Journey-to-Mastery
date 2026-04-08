@@ -165,6 +165,31 @@
     margin-bottom: var(--spacing-sm);
 }
 
+.blog-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: var(--spacing-lg);
+}
+
+.page-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    background: var(--color-white);
+    color: var(--color-text-primary);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.page-btn.active {
+    background: var(--color-accent);
+    color: var(--color-white);
+    border-color: var(--color-accent);
+}
+
 @media (max-width: 768px) {
     .blog-grid {
         grid-template-columns: 1fr;
